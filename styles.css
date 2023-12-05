@@ -1,0 +1,87 @@
+/* Estilos para el contador principal */
+.big-counter {
+    background-image: url('DSC_0434.png'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px 40px; /* Ajusta el padding para equilibrar el espacio */
+    border-radius: 10px;
+    color: white;
+    margin: 20px auto; /* Espaciado uniforme alrededor del contador */
+    max-width: 100%; /* Ancho completo */
+    position: relative; /* Posición relativa para el título y número */
+}
+
+/* Tamaño del título y subtítulo del contador nacional */
+.big-counter .counter-title {
+    font-size: 40px; /* Reducido para dar más espacio al número */
+    margin: 0; /* Ajusta el margen superior del título */
+}
+
+.big-counter .counter-subtitle {
+    font-size: 24px; /* Reducido para dar más espacio al número */
+}
+
+/* Tamaño del número del contador nacional */
+.big-counter .counter-ticker {
+    font-size: 180px; /* Aumenta para mayor visibilidad */
+    display: block; /* Asegura que el número sea un bloque */
+    margin: 0 auto; /* Centra el número y proporciona espacio */
+}
+
+/* Estilos para los contadores regionales */
+.region-counters {
+    display: flex;
+    justify-content: center; /* Alinea al centro */
+    flex-wrap: wrap; /* Permite envolver en líneas separadas si es necesario */
+    gap: 5px; /* Espacio reducido entre los contadores */
+    margin: 20px auto; /* Espacio superior e inferior */
+}
+
+/* Estilos individuales para contadores regionales */
+.counter-region {
+    background-color: black; /* Fondo negro para contadores regionales */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 10px; /* Padding interior adecuado */
+    margin: 5px;
+    flex-basis: 17%; /* Base para la flexibilidad del ancho ajustada */
+    max-width: 17%; /* Máximo ancho ajustado para cada contador regional */
+    border-radius: 5px;
+}
+
+/* Estilos para los nombres de las regiones y los números */
+.counter-region .counter-name,
+.counter-region .counter-ticker,
+.counter-region .counter-subtitle {
+    font-size: 18px; /* Tamaño uniforme para texto dentro de contadores regionales */
+    margin-bottom: 5px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .big-counter .counter-ticker {
+        font-size: 100px; /* Tamaño ajustado del número para pantallas pequeñas */
+    }
+    .big-counter .counter-title {
+        font-size: 30px; /* Tamaño ajustado del título para pantallas pequeñas */
+    }
+    .big-counter .counter-subtitle {
+        font-size: 18px; /* Tamaño ajustado del subtítulo para pantallas pequeñas */
+    }
+    .region-counters {
+        flex-direction: column;
+    }
+    .counter-region {
+        width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+    .counter-region .counter-name,
+    .counter-region .counter-ticker,
+    .counter-region .counter-subtitle {
+        font-size: 16px; /* Tamaño ajustado del texto para pantallas pequeñas */
+    }
+}

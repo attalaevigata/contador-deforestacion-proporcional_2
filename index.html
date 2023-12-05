@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj de Deforestación</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="big-counter">
+        <!-- El ID para el contador nacional se ajusta para que coincida con el JavaScript -->
+        <div id="reloj-deforestacion" class="counter-ticker"></div>
+        <h1 class="counter-title">Hectáreas de bosque que le quedan a Colombia</h1>
+        <p class="counter-subtitle">Tasa deforestación 2022</p>
+    </div>
+
+    <div class="region-counters">
+        <!-- Cada contador regional tiene un ID que también debe coincidir con el JavaScript -->
+        <div class="counter-region">
+            <h2 class="counter-name">Amazonia</h2>
+            <div id="reloj-amazonia" class="counter-ticker"></div>
+            <p class="counter-subtitle">Tasa deforestación 2022</p>
+        </div>
+        <div class="counter-region">
+            <h2 class="counter-name">Andes</h2>
+            <div id="reloj-andes" class="counter-ticker"></div>
+            <p class="counter-subtitle">Tasa deforestación 2022</p>
+        </div>
+        <div class="counter-region">
+            <h2 class="counter-name">Pacífico</h2>
+            <div id="reloj-pacifico" class="counter-ticker"></div>
+            <p class="counter-subtitle">Tasa deforestación 2022</p>
+        </div>
+        <div class="counter-region">
+            <h2 class="counter-name">Caribe</h2>
+            <div id="reloj-caribe" class="counter-ticker"></div>
+            <p class="counter-subtitle">Tasa deforestación 2022</p>
+        </div>
+        <div class="counter-region">
+            <h2 class="counter-name">Orinoquía</h2>
+            <div id="reloj-orinoquia" class="counter-ticker"></div>
+            <p class="counter-subtitle">Tasa deforestación 2022</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
